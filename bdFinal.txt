@@ -1,0 +1,57 @@
+DROP TABLE STUDENT;
+
+create table STUDENT(
+  matricula number(6) ,
+  nombre varchar(30),
+  ap_paterno varchar (30),
+  ap_materno varchar (30),
+  sexo varchar(20),
+  carrera varchar(30),
+  facultad varchar (30),
+  semestre number (2)
+);
+
+create table CARRERAS(
+ id_carrera number (3),
+ carrera varchar (30)
+);
+
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES
+(1,'Ing. Software'):
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES 
+(2,'Ing. Hardware');
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES
+(3, Lic. Derecho');
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES
+(4,'Ing Minas');
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES
+(5,'Ing Civil');
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES
+(6,'Lic. Contador Pubico'):
+INSERT INTO CARRERAS (id_carrera, carrera) VALUES
+(7,'Lic. Administracion');
+
+create table FACULTADES(
+ id_facultad number (3),
+ facultad varchar (30)
+);
+
+INSERT INTO FACULTADES (id_facultad, facultad) VALUES
+(1,'Ingenieria'); 
+INSERT INTO FACULTADES (id_facultad, facultad) VALUES
+(2,'Contabilidad');
+INSERT INTO FACULTADES (id_facultad, facultad) VALUES
+(3,'Derecho');
+
+
+create table USUARIOS(
+ id_usuario number(3),
+ nombre varchar (30),
+ usuario varchar (20),
+ clave varchar (20),
+ puesto varchar (20)
+);
+
+insert into USUARIOS(id_usuario,nombre,usuario,clave,puesto) 
+VALUES (1,'Yesica','admin','admin','admin');
+
